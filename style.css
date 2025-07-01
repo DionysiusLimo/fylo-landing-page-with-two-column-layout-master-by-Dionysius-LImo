@@ -100,11 +100,81 @@ h1 {
   padding: 40px 60px;
   color: white;
 }
->footer div:not(:last-child) a{
+> footer div:not(:last-child) a {
   display: block;
   color: inherit;
   margin-top: 10px;
   text-decoration: none;
 }
-
+footer ion-icon {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+/* tablets */
+@media (max-width: 1200px) {
+  body {
+    background-color: aqua;
+  }
+}
+/* mobile devices */
+@media (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  header {
+    padding: 20px;
+    align-items: center;
+  }
+  header a {
+    padding: 12px;
+  }
+  .hero {
+    padding: 20px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  input {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+  button {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .background-pattern {
+    background-image: url(/images/bg-curve-mobile.svg);
+  }
+  .hero-2 {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .hero-2 h2 {
+    text-align: center;
+  }
+  .hero-2 .left-side {
+    text-align: center;
+    display: block;
+  }
+  .quote {
+    margin: 20px auto;
+  }
+  .early-access {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .early-access form {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
